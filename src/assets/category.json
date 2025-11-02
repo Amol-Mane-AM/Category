@@ -1,0 +1,82 @@
+[
+  {
+    "categoryId": 1,
+    "categoryName": "Electronics",
+    "description": "Devices, gadgets, and accessories",
+    "status": true,
+    "created_at": "2025-10-01T10:15:00",
+    "updated_at": "2025-10-05T11:20:00"
+  },
+  {
+    "categoryId": 2,
+    "categoryName": "Clothing",
+    "description": "Men's and women's apparel",
+    "status": true,
+    "created_at": "2025-10-02T09:30:00",
+    "updated_at": "2025-10-06T12:45:00"
+  },
+  {
+    "categoryId": 3,
+    "categoryName": "Home Appliances",
+    "description": "Appliances and essentials for daily use",
+    "status": true,
+    "created_at": "2025-10-03T08:45:00",
+    "updated_at": "2025-10-07T14:00:00"
+  },
+  {
+    "categoryId": 4,
+    "categoryName": "Books",
+    "description": "Educational, fictional, and non-fictional books",
+    "status": true,
+    "created_at": "2025-10-04T13:10:00",
+    "updated_at": "2025-10-08T15:25:00"
+  },
+  {
+    "categoryId": 5,
+    "categoryName": "Furniture",
+    "description": "Home and office furniture collection",
+    "status": true,
+    "created_at": "2025-10-05T16:20:00",
+    "updated_at": "2025-10-09T10:10:00"
+  },
+  {
+    "categoryId": 6,
+    "categoryName": "Sports",
+    "description": "All sports gear and fitness accessories",
+    "status": true,
+    "created_at": "2025-10-06T11:05:00",
+    "updated_at": "2025-10-10T12:00:00"
+  },
+  {
+    "categoryId": 7,
+    "categoryName": "Beauty & Personal Care",
+    "description": "Cosmetics, skincare, and grooming products",
+    "status": true,
+    "created_at": "2025-10-07T14:30:00",
+    "updated_at": "2025-10-11T09:50:00"
+  },
+  {
+    "categoryId": 8,
+    "categoryName": "Toys & Games",
+    "description": "Toys and entertainment for kids of all ages",
+    "status": true,
+    "created_at": "2025-10-08T10:00:00",
+    "updated_at": "2025-10-12T15:00:00"
+  },
+  {
+    "categoryId": 9,
+    "categoryName": "Groceries",
+    "description": "Daily essentials and food items",
+    "status": false,
+    "created_at": "2025-10-09T08:00:00",
+    "updated_at": "2025-10-13T11:45:00"
+  },
+  {
+    "categoryId": 10,
+    "categoryName": "Automotive",
+    "description": "Car accessories and spare parts",
+    "status": true,
+    "created_at": "2025-10-10T12:40:00",
+    "updated_at": "2025-10-14T14:20:00"
+  }
+]

@@ -23,9 +23,9 @@ export class CategoryService  {
 }
 
   getCategories(): Observable<Category[]> {
-  return this.http.get<Category[]>(this.apiUrl); // Or similar API call
+  return this.http.get<Category[]>(this.apiUrljsondata); // Or similar API call
 }
-
+private apiUrljsondata = 'assets/category.json';
   private apiUrl = 'http://localhost:8080/api/categories';
 
   constructor(private http: HttpClient) { }
