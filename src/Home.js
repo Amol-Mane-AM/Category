@@ -83,21 +83,50 @@ debugger;
     }
   };
 
- const filterByCategory = async (categoryName) => {
+//  const filterByCategory = async (categoryName) => {
+//   setSelectedCategory(categoryName);
+//   setLoading(true);
+//   try {
+//     const res = await axios.get(`http://localhost:8080/admin/products/category/${categoryName}`);
+//     const filtered = res.data.filter(p => p.active && p.category?.active);
+//     setProducts(filtered);
+//   } catch (err) {
+//     console.error("Category filter error:", err);
+//     alert("Failed to load products for category: " + categoryName);
+//   } finally {
+//     setLoading(false);
+//   }
+// };
+
+const filterByCategory = async (categoryName) => { 
   setSelectedCategory(categoryName);
   setLoading(true);
+
   try {
-    const res = await axios.get(`http://localhost:8080/admin/products/category/${categoryName}`);
-    const filtered = res.data.filter(p => p.active && p.category?.active);
+    // ✅ find category id from name
+    const category = categoryData.find(
+      (c) => c.name.toLowerCase() === categoryName.toLowerCase()
+    );
+
+    if (!category) {
+      alert("Category not found!");
+      setProducts([]);
+      return;
+    }
+
+    // ✅ filter products by category id (local JSON)
+    const filtered = productData.filter(
+      (p) => Number(p.categoryId) === Number(category.id)
+    );
+
     setProducts(filtered);
   } catch (err) {
     console.error("Category filter error:", err);
-    alert("Failed to load products for category: " + categoryName);
+    alert("Failed to filter products!");
   } finally {
     setLoading(false);
   }
 };
-
 
   return (
 
